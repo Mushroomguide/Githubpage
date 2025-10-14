@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forest Mushroom Field Guide</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1>Forest Mushroom Field Guide</h1>
+      <p>
+        Explore five iconic forest mushrooms, compare them with look-alikes, learn about their chemistry, and review
+        safety considerations before your next forage.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Choose a Mushroom</h2>
+      <p>Tap a mushroom to explore identification tips, chemical profiles, and safe preparation guidance.</p>
+    </section>
+
+    <section class="grid" id="mushroom-grid">
+      <article class="card" data-mushroom="psilocybe-semilanceata">
+        <div class="card__badge">Psilocybe</div>
+        <h3>Psilocybe semilanceata</h3>
+        <p>Known as the Liberty Cap, this delicate species thrives in temperate grasslands.</p>
+      </article>
+
+      <article class="card" data-mushroom="psilocybe-cyanescens">
+        <div class="card__badge">Psilocybe</div>
+        <h3>Psilocybe cyanescens</h3>
+        <p>Wavy-capped wood lover famed for its rippled margins and intense blue bruising.</p>
+      </article>
+
+      <article class="card" data-mushroom="panaeolus-cinctulus">
+        <div class="card__badge">Panaeolus</div>
+        <h3>Panaeolus cinctulus</h3>
+        <p>Common lawn dweller with mottled gills and a dark ring around the cap margin.</p>
+      </article>
+
+      <article class="card" data-mushroom="amanita-pantherina">
+        <div class="card__badge">Amanita</div>
+        <h3>Amanita pantherina</h3>
+        <p>The Panther Cap bears chocolate-brown tones and white warty patches.</p>
+      </article>
+
+      <article class="card" data-mushroom="amanita-muscaria">
+        <div class="card__badge">Amanita</div>
+        <h3>Amanita muscaria</h3>
+        <p>The archetypal Fly Agaric, famed for its scarlet cap dotted with white warts.</p>
+      </article>
+    </section>
+  </main>
+
+  <div class="modal" id="mushroom-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__content" role="document">
+      <button class="modal__close" type="button" data-close aria-label="Close dialog">&times;</button>
+      <h2 id="modal-title">Explore Mushroom Details</h2>
+      <p id="modal-subtitle">Select a topic to dive deeper.</p>
+      <div class="modal__options">
+        <a class="option" data-option="lookalikes" href="#">Lookalikes &amp; ID Tips</a>
+        <a class="option" data-option="chemistry" href="#">Chemistry &amp; Toxins</a>
+        <a class="option" data-option="basics" href="#">Basic Information</a>
+        <a class="option" data-option="safety" href="#">Safety &amp; Preparation</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>For educational reference only. Always consult local experts and regulations before foraging.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
