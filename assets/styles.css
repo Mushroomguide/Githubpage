@@ -27,37 +27,6 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.hero {
-  position: relative;
-  background: url('https://images.unsplash.com/photo-1476041800959-2f6bb412c8ce?auto=format&fit=crop&w=1500&q=80') center/cover;
-  color: var(--fg);
-  padding: 6rem 1.5rem;
-  text-align: center;
-  isolation: isolate;
-}
-
-.hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(16, 21, 17, 0.7), rgba(16, 21, 17, 0.9));
-  z-index: -1;
-}
-
-.hero__content {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.hero h1 {
-  font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: var(--muted);
-}
-
 .container {
   flex: 1;
   padding: 3rem 1.5rem 4rem;
